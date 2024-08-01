@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Code QR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur de Code QR</h1>
+        <input type="text" id="text-input-1" placeholder="Entrez le texte ou l'URL 1">
+        <input type="text" id="text-input-2" placeholder="Entrez le texte ou l'URL 2">
+        <input type="text" id="text-input-3" placeholder="Entrez le texte ou l'URL 3">
+        <input type="text" id="text-input-4" placeholder="Entrez le texte ou l'URL 4">
+        <input type="text" id="text-input-5" placeholder="Entrez le texte ou l'URL 5">
+        <button id="update-btn">Mettre à jour les valeurs</button>
+        <button id="generate-btn">Générer le Code QR</button>
+        <div id="qrcode-display">
+            <div class="qr-line">
+                <div id="qrcode-1"></div>
+                <div id="text-below-1"></div>
+            </div>
+            <div class="qr-line">
+                <div id="qrcode-2"></div>
+                <div id="text-below-2"></div>
+            </div>
+            <div class="qr-line">
+                <div id="qrcode-3"></div>
+                <div id="text-below-3"></div>
+            </div>
+            <div class="qr-line">
+                <div id="qrcode-4"></div>
+                <div id="text-below-4"></div>
+            </div>
+            <div class="qr-line">
+                <div id="qrcode-5"></div>
+                <div id="text-below-5"></div>
+            </div>
+            <div class="qr-line">
+                <div id="qrcode-6"></div>
+                <div id="text-below-6"></div>
+            </div>
+            <div class="qr-line">
+                <div id="qrcode-7"></div>
+                <div id="text-below-7"></div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="print-btn">Imprimer</button>
+            <button id="edit-btn">Modifier</button>
+            <button id="delete-btn">Supprimer</button>
+            <button id="back-btn">Retour</button>
+        </div>
+    </div>
+    <div id="print-section">
+        <div class="print-line" id="print-qrcode-1"></div>
+        <div class="print-line" id="print-text-below-1"></div>
+        <div class="print-line" id="print-qrcode-2"></div>
+        <div class="print-line" id="print-text-below-2"></div>
+        <div class="print-line" id="print-qrcode-3"></div>
+        <div class="print-line" id="print-text-below-3"></div>
+        <div class="print-line" id="print-qrcode-4"></div>
+        <div class="print-line" id="print-text-below-4"></div>
+        <div class="print-line" id="print-qrcode-5"></div>
+        <div class="print-line" id="print-text-below-5"></div>
+        <div class="print-line" id="print-qrcode-6"></div>
+        <div class="print-line" id="print-text-below-6"></div>
+        <div class="print-line" id="print-qrcode-7"></div>
+        <div class="print-line" id="print-text-below-7"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
